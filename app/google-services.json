@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493150933349",
+    "project_id": "proyectoine-cc34a",
+    "storage_bucket": "proyectoine-cc34a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493150933349:android:226ee14681be118d9c118c",
+        "android_client_info": {
+          "package_name": "com.example.validacion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpVrCN-41vBNjuKcxyQ6ImO7hWk1VV82Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

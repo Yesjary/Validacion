@@ -1,0 +1,13 @@
+
+<resources>
+<!-- Base application theme -->
+<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Barra de estado (donde está la hora) -->
+    <item name="android:statusBarColor">#DC7BBF</item>
+    <!-- Para asegurar que los íconos y el texto sean oscuros -->
+    <item name="android:windowLightStatusBar">true</item>
+    <!-- Barra de navegación (opcional) -->
+    <item name="android:navigationBarColor">@android:color/white</item>
+    <item name="android:windowLightNavigationBar">true</item>
+</style>
+</resources>
