@@ -21,6 +21,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- EditText para ingresar el nombre -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:hint="Ingrese su nombre"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layout_constraintWidth_percent="0.8" />
+
     <!-- Imagen en la parte superior derecha -->
     <ImageView
         android:id="@+id/image_top_right"
@@ -33,42 +46,61 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Imagen central -->
+    <!-- Imagen central (INE) -->
     <ImageView
         android:id="@+id/image_view_ine"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/foto_ine"
-        android:scaleType="fitCenter"
-        android:contentDescription="Foto INE"
         android:layout_marginBottom="16dp"
-        app:layout_constraintTop_toBottomOf="@id/text_title"
-        app:layout_constraintBottom_toTopOf="@id/button_take_picture"
+        android:contentDescription="Foto INE"
+        android:scaleType="fitCenter"
+        android:src="@drawable/foto_ine"
+        app:layout_constraintBottom_toTopOf="@id/buttonTakePicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/text_title" />
 
     <!-- Botón Tomar foto -->
     <Button
-        android:id="@+id/button_take_picture"
+        android:id="@+id/buttonTakePicture"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tomar foto"
+        android:layout_marginTop="44dp"
         android:backgroundTint="#DC7BBF"
+        android:text="Tomar foto"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/image_view_ine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/image_view_ine" />
 
+    <!-- Botón Subir Encodings
+
+    <Button
+        android:id="@+id/buttonUploadEncodings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#7BBFDC"
+        android:text="Subir Encodings"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTakePicture" />-->
     <!-- Botón Cerrar sesión -->
     <Button
         android:id="@+id/logOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CERRAR SESIÓN"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#DC7BBF"
+        android:text="CERRAR SESIÓN"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@id/button_take_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonTakePicture" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
