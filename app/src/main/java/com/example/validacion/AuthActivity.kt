@@ -17,7 +17,7 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun setup() {
-        title = "Autenticación"
+        title = "Authentication"
 
 
         findViewById<Button>(R.id.signUpButton).setOnClickListener {
